@@ -4,11 +4,13 @@
 # 猜錯的話要告訴他比答案大/小
 import random
 r = random.randint(1, 100)
+count = 0
 while True:
 	guess_num = input('請猜數字(1~100):')
 	guess_num = int(guess_num)
+	count += 1 # 同於count = count + 1
 	if guess_num == r:
-		print('終於猜對了!! 答案為', r)
+		print('猜對了!! 答案為', r, ', 總共猜了', count, '次!')
 		break
 	elif guess_num > r and guess_num > 0 and guess_num < 100:
 		print('比答案大', '答案',  '~', guess_num, '請繼續猜')
