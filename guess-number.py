@@ -22,4 +22,4 @@ while True:
 	elif guess_num < r and guess_num > start and guess_num < end:
 		print('比答案大', guess_num, '~', '答案', '請繼續猜')
 	else:
-		print('超出範圍, 請輸入範圍1~100')
+		print('超出範圍, 請輸入範圍', start, '~', end)
